@@ -24,5 +24,9 @@
     <ItemGroup>
       <ProjectReference Include="..\EmuLab.Common\EmuLab.Common.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Plugins\" />
+    </ItemGroup>
     
 </Project>

@@ -1,4 +1,6 @@
 ﻿using EmuLab.Common;
+using EmuLab.Common.Plugins;
+
 
 namespace EmuLab;
 

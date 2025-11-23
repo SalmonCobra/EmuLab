@@ -1,11 +1,11 @@
 using System.Reflection;
 
-namespace EmuLab.Common;
+namespace EmuLab.Common.Plugins;
 
 public class PluginManager
 {
     public static List<IPlugin> Instances { get; } = [];
-    private static readonly PluginContext Context = new();
+    
     public static void LoadPlugins()
     {
         foreach (string pluginfile in Directory.GetFiles("Plugins", "*.dll"))
@@ -26,12 +26,12 @@ public class PluginManager
     public static void OnLoad()
     {
         foreach (IPlugin plugin in Instances)
-            plugin.OnLoad(Context);
+            plugin.OnLoad(Core.Context);
     }
 
     public static void Update()
     {
         foreach (IPlugin plugin in Instances)
-            plugin.Update(Context);
+            plugin.Update(Core.Context);
     }
 }

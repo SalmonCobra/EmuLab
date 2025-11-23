@@ -1,5 +1,5 @@
 ﻿
-namespace EmuLab.Common;
+namespace EmuLab.Common.Plugins;
 
 public interface IPlugin
 {
