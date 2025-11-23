@@ -1,0 +1,75 @@
+# --- JetBrains Rider / IntelliJ ---
+.idea/
+*.shelf
+*.iml
+
+# --- Build output ---
+bin/
+obj/
+out/
+artifacts/
+
+# --- User local files ---
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.rsuser
+*.DotSettings.user
+
+# --- Rider caches ---
+.idea/.idea.*  # extra safety
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# --- Logs ---
+*.log
+
+# --- Temp ---
+*.pid
+*.tmp
+*.temp
+
+# --- NuGet ---
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# --- VS / MSBuild files ---
+*.vs/
+.vs/
+
+# --- Generated files ---
+*.Generated.cs
+*.g.cs
+*.g.i.cs
+
+# --- MonoGame content cache ---
+# (if applicable)
+MonoGameCache/
+Content/bin/
+Content/obj/
+
+# --- Python venv (if you store scripts) ---
+venv/
+.env/
+
+# --- OS files ---
+# macOS
+.DS_Store
+# linux
+*~
+# windows
+Thumbs.db
+
+
+
+
+Plugin1
+Plugin2

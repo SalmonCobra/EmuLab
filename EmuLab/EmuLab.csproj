@@ -9,15 +9,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\EmuLab.Common\EmuLab.Common.csproj"/>
-    </ItemGroup>
-
-    <ItemGroup>
         <Compile Remove="Plugins\**\*" />
         <EmbeddedResource Remove="Plugins\**\*" />
         <Content Remove="Plugins\**\*" />
     </ItemGroup>
-
 
     <ItemGroup>
         <None Include="Plugins\**\*">
@@ -26,5 +21,8 @@
         </None>
     </ItemGroup>
 
-
+    <ItemGroup>
+      <ProjectReference Include="..\EmuLab.Common\EmuLab.Common.csproj" />
+    </ItemGroup>
+    
 </Project>
