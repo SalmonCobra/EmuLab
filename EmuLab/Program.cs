@@ -11,5 +11,7 @@ class Program
         PluginManager.LoadPlugins();
         PluginManager.OnLoad();
         PluginManager.Update();
+        Console.WriteLine();
+        Console.WriteLine(Core.Context.Services.Services[new ServiceId("MyPlugin", "MyPlugin")]);
     }
 }

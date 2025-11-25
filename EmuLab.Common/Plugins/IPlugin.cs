@@ -3,10 +3,7 @@ namespace EmuLab.Common.Plugins;
 
 public interface IPlugin
 {
-    string name { get; }
-    string description { get; }
-    Version version { get; }
-    string author { get; }
+    PluginMetadata Metadata { get; }
     void OnLoad(PluginContext Context);
     void Update(PluginContext Context);
 }

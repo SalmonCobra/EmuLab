@@ -17,7 +17,7 @@ public class PluginManager
             {
                 IPlugin instance = (IPlugin)Activator.CreateInstance(pluginType);
                 Instances.Add(instance);
-                Console.WriteLine($"Loaded plugin: {instance.name} v{instance.version} (by {instance.author})");
+                Console.WriteLine($"Loaded plugin: {instance.Metadata.Name} v{instance.Metadata.Version} (by {instance.Metadata.Author})");
             }
         }
         Console.WriteLine();
